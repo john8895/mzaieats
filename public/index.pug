@@ -4,3 +4,14 @@ block vars
     - var headerClass = 'header-transparent'
 block content
     main.page__index
+        section.store-list
+            .container-fluid.pt-5
+                .row
+                    -for(var i=1;i<=8;i++)
+                        .col-sm-3
+                            article.store-list__item
+                                .store-image
+                                    img(src='http://fakeimg.pl/550x275',alt='')
+                                .store-meta.d-flex
+                                    .store-name
+                                        | A Bao House 成都店

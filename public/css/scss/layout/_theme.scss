@@ -8,10 +8,54 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 600;
     color: $main-color;
 }
+body {
+    font-family: "Microsoft JhengHei";
+}
 
 // header
-.navbar-brand {
-    &>img {
-        
+//.navbar-brand {
+//    &>img {
+//
+//    }
+//}
+.menu-btn {
+    width: 18px;
+    height: 18px;
+    outline: none;border:none;
+    background-color: transparent;
+    margin-right: 32px;
+    padding: 6px 0 0;
+}
+.navbar {
+    &>.container-fluid {
+        padding: 0 40px;
+    }
+}
+
+
+
+.recommend-eat {
+    background-color: #F6F6F6;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+
+    i {
+        margin-right: 17px;
+    }
+    .recommend-text {
+
+    }
+}
+//store-list
+.store-list {
+    &>.container-fluid {
+        padding: 0 40px;
+    }
+    &__item {
+        padding-bottom: 24px;
+    }
+    .store-meta {
+        padding-top: 10px;
     }
 }

@@ -48,13 +48,18 @@
             li
                 a.dropdown-item(href='#') Sign out
 .navbar.navbar-dark.bg-lighj.shadow-sm
-    .container
-        a.navbar-brand.d-flex.align-items-center(href='#')
+    .container-fluid
+        .menu-controller.d-flex
+
+            button.menu-btn(aria-label='主瀏覽選單')
+                svg(aria-hidden='true' focusable='false' viewBox='0 0 20 20')
+                    path(d='M19.167 3.333H.833v2.5h18.334v-2.5zm0 5.834H.833v2.5h18.334v-2.5zM.833 15h18.334v2.5H.833V15z')
             //-
-                svg.me-2(xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true' viewBox='0 0 24 24')
-                    path(d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z')
-                    circle(cx='12' cy='13' r='4')
-            img(src='images/logo.svg',alt='',width='146',height='24')
-            //| Mzai Eats (嗯災吃啥)
-        button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
+                button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img(src='images/logo.svg',alt='', width='146', height='24')
+        .recommend-eat
+            i.fa.fa-utensils
+            span.recommend-text.mr-2 今天推薦你吃
+            span.store-name 龍品魚丸店
