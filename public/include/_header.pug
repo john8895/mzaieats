@@ -1,0 +1,60 @@
+#navbarHeader.bg-dark.collapse(style='')
+    .d-flex.flex-column.p-3.bg-light(style='width: 280px;')
+        a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.link-dark.text-decoration-none(href='/')
+            svg.bi.me-2(width='40' height='32')
+                use(xlink:href='#bootstrap')
+            span.fs-4 Sidebar
+        hr
+        ul.nav.nav-pills.flex-column.mb-auto
+            li.nav-item
+                a.nav-link.active(href='#')
+                    svg.bi.me-2(width='16' height='16')
+                        use(xlink:href='#home')
+                    |         Home
+            li
+                a.nav-link.link-dark(href='#')
+                    svg.bi.me-2(width='16' height='16')
+                        use(xlink:href='#speedometer2')
+                    |         Dashboard
+            li
+                a.nav-link.link-dark(href='#')
+                    svg.bi.me-2(width='16' height='16')
+                        use(xlink:href='#table')
+                    |         Orders
+            li
+                a.nav-link.link-dark(href='#')
+                    svg.bi.me-2(width='16' height='16')
+                        use(xlink:href='#grid')
+                    |         Products
+            li
+                a.nav-link.link-dark(href='#')
+                    svg.bi.me-2(width='16' height='16')
+                        use(xlink:href='#people-circle')
+                |         Customers
+    hr
+    .dropdown
+        a#dropdownUser2.d-flex.align-items-center.link-dark.text-decoration-none.dropdown-toggle(href='#' data-bs-toggle='dropdown' aria-expanded='false')
+            img.rounded-circle.me-2(src='https://github.com/mdo.png' alt='mdo' width='32' height='32')
+            strong mdo
+        ul.dropdown-menu.text-small.shadow(aria-labelledby='dropdownUser2')
+            li
+                a.dropdown-item(href='#') New project...
+            li
+                a.dropdown-item(href='#') Settings
+            li
+                a.dropdown-item(href='#') Profile
+            li
+                hr.dropdown-divider
+            li
+                a.dropdown-item(href='#') Sign out
+.navbar.navbar-dark.bg-lighj.shadow-sm
+    .container
+        a.navbar-brand.d-flex.align-items-center(href='#')
+            //-
+                svg.me-2(xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true' viewBox='0 0 24 24')
+                    path(d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z')
+                    circle(cx='12' cy='13' r='4')
+            img(src='images/logo.svg',alt='',width='146',height='24')
+            //| Mzai Eats (嗯災吃啥)
+        button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon

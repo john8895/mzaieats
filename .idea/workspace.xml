@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f3c3c6-aeff-4bde-8217-f66cc118284a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/._logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/scss/layout/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/scss/layout/_theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -36,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618288757664</updated>
       <workItem from="1618288758989" duration="1352000" />
+      <workItem from="1618360847530" duration="168000" />
     </task>
     <servers />
   </component>
