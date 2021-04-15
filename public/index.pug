@@ -15,3 +15,13 @@ block content
                                 .store-meta.d-flex
                                     .store-name
                                         | A Bao House 成都店
+        section.store-category
+            .container-fluid
+                ul.store-category__item
+                    -for(var i=1;i<=6;i++)
+                        li
+                            a(href='#',title='')
+                                figure
+                                    img(src='images/store-category.jpg',alt='')
+                                    figcaption.text-center
+                                        | 中式美食

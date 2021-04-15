@@ -11,6 +11,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 body {
     font-family: "Microsoft JhengHei";
 }
+section {
+    padding: 40px 0;
+}
 
 // header
 //.navbar-brand {
@@ -50,12 +53,41 @@ body {
 //store-list
 .store-list {
     &>.container-fluid {
-        padding: 0 40px;
+        padding-bottom: 40px;
     }
     &__item {
         padding-bottom: 24px;
     }
     .store-meta {
         padding-top: 10px;
+    }
+}
+// store-category
+.store-category {
+    figure {
+        height: 253px;
+        width: 253px;
+        &>img{
+            object-fit: cover;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    figcaption {
+        margin-top: 7px;
+
+    }
+    &__item {
+        display:flex;
+        li {
+            padding: 0 30px;
+            //max-width: 253px;
+            //max-height: 253px;
+        }
+    }
+    a {
+        color: #000;
+        text-decoration: none;
     }
 }

@@ -227,6 +227,10 @@ body {
   font-family: "Microsoft JhengHei";
 }
 
+section {
+  padding: 40px 0;
+}
+
 .menu-btn {
   width: 18px;
   height: 18px;
@@ -251,13 +255,37 @@ body {
   margin-right: 17px;
 }
 .store-list > .container-fluid {
-  padding: 0 40px;
+  padding-bottom: 40px;
 }
 .store-list__item {
   padding-bottom: 24px;
 }
 .store-list .store-meta {
   padding-top: 10px;
+}
+
+.store-category figure {
+  height: 253px;
+  width: 253px;
+}
+.store-category figure > img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.store-category figcaption {
+  margin-top: 7px;
+}
+.store-category__item {
+  display: flex;
+}
+.store-category__item li {
+  padding: 0 30px;
+}
+.store-category a {
+  color: #000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
