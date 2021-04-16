@@ -36,6 +36,14 @@ body {
 .navbar {
     & > .container-fluid {
         padding: 0 40px;
+        justify-content: flex-start;
+    }
+
+    .menu-btn {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
@@ -43,15 +51,19 @@ body {
 .recommend-eat {
     background-color: #F6F6F6;
     display: block;
-    padding: 10px 15px;
+    padding: 15px 25px;
     font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 1px solid #e3e3e3;
+    min-width: 400px;
 
     i {
-        margin-right: 17px;
+        margin-right: 20px;
+        font-size: 18px;
     }
 
     .recommend-text {
-
+        margin-right: 6px;
     }
 }
 
@@ -73,6 +85,7 @@ body {
 // store-category
 .store-category {
     padding: 20px 0;
+
     figure {
         //max-height: 253px;
         //max-width: 253px;
@@ -113,5 +126,60 @@ body {
     a {
         color: #000;
         text-decoration: none;
+    }
+}
+
+// sidebar
+//.sidebar {
+//    position: relative;
+//
+//    &__menu {
+//        display: flex;
+//        flex-direction: column;
+//        position: fixed;
+//        width: 280px;
+//        left: 0;
+//        top: 0;
+//        bottom: 0;
+//        z-index: 10;
+//        transform: translateY(-100%);
+//
+//    }
+//    &.show {
+//       .sidebar__menu {
+//           transform: translateY(0);
+//       }
+//    }
+//}
+.header {
+    position: relative;
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 280px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        transform: translateX(-100%);
+        transition: .3s ease-in-out .1s;
+
+        &.show {
+            transform: translateY(0)
+        }
+    }
+    .sidebar-layout {
+            background-color: #00000082;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        z-index: 5;
+        &.show {
+            display: block;
+        }
     }
 }

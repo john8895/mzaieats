@@ -1,5 +1,5 @@
-#navbarHeader.bg-dark.collapse(style='')
-    .d-flex.flex-column.p-3.bg-light(style='width: 280px;')
+#navbarHeader.bg-light.sidebar(style='')
+    .sidebar__menu.p-3
         a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.link-dark.text-decoration-none(href='/')
             svg.bi.me-2(width='40' height='32')
                 use(xlink:href='#bootstrap')
@@ -26,40 +26,18 @@
                     svg.bi.me-2(width='16' height='16')
                         use(xlink:href='#grid')
                     |         Products
-            li
-                a.nav-link.link-dark(href='#')
-                    svg.bi.me-2(width='16' height='16')
-                        use(xlink:href='#people-circle')
-                |         Customers
     hr
-    .dropdown
-        a#dropdownUser2.d-flex.align-items-center.link-dark.text-decoration-none.dropdown-toggle(href='#' data-bs-toggle='dropdown' aria-expanded='false')
-            img.rounded-circle.me-2(src='https://github.com/mdo.png' alt='mdo' width='32' height='32')
-            strong mdo
-        ul.dropdown-menu.text-small.shadow(aria-labelledby='dropdownUser2')
-            li
-                a.dropdown-item(href='#') New project...
-            li
-                a.dropdown-item(href='#') Settings
-            li
-                a.dropdown-item(href='#') Profile
-            li
-                hr.dropdown-divider
-            li
-                a.dropdown-item(href='#') Sign out
+.sidebar-layout
 .navbar.navbar-dark.bg-lighj.shadow-sm
     .container-fluid
         .menu-controller.d-flex
-
-            button.menu-btn(aria-label='主瀏覽選單')
+            button.menu-btn#menuBtn(aria-label='主瀏覽選單')
                 svg(aria-hidden='true' focusable='false' viewBox='0 0 20 20')
                     path(d='M19.167 3.333H.833v2.5h18.334v-2.5zm0 5.834H.833v2.5h18.334v-2.5zM.833 15h18.334v2.5H.833V15z')
-            //-
-                button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
             a.navbar-brand.d-flex.align-items-center(href='#')
                 img(src='images/logo.svg',alt='', width='146', height='24')
         .recommend-eat
-            i.fa.fa-utensils
-            span.recommend-text.mr-2 今天推薦你吃
-            span.store-name 龍品魚丸店
+            i.fas.fa-utensils
+            span.recommend-text 今天推薦你吃
+            a(href='group-order.html',title='')
+                span.store-name 龍品魚丸店
