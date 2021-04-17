@@ -8,12 +8,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 600;
     color: $main-color;
 }
+
 body {
-    font-family: "Microsoft JhengHei";
+    font-family: "Microsoft JhengHei", serif;
 }
-section {
-    padding: 40px 0;
+
+a {
+    color: $main-color;
 }
+
+//section {
+//    padding: 40px 0;
+//}
 
 // header
 //.navbar-brand {
@@ -24,70 +30,193 @@ section {
 .menu-btn {
     width: 18px;
     height: 18px;
-    outline: none;border:none;
+    outline: none;
+    border: none;
     background-color: transparent;
     margin-right: 32px;
     padding: 6px 0 0;
 }
+
 .navbar {
-    &>.container-fluid {
+    & > .container-fluid {
         padding: 0 40px;
+        justify-content: flex-start;
+    }
+
+    .menu-btn {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
-
 
 
 .recommend-eat {
     background-color: #F6F6F6;
     display: block;
-    padding: 10px 15px;
+    padding: 15px 25px;
     font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 1px solid #e3e3e3;
+    min-width: 400px;
 
     i {
-        margin-right: 17px;
+        margin-right: 20px;
+        font-size: 18px;
     }
-    .recommend-text {
 
+    .recommend-text {
+        margin-right: 6px;
     }
 }
+
 //store-list
 .store-list {
-    &>.container-fluid {
+    & > .container-fluid {
         padding-bottom: 40px;
     }
+
     &__item {
         padding-bottom: 24px;
     }
+
     .store-meta {
         padding-top: 10px;
     }
 }
+
 // store-category
 .store-category {
+    padding: 20px 0;
+
     figure {
-        height: 253px;
-        width: 253px;
-        &>img{
+        //max-height: 253px;
+        //max-width: 253px;
+        position: relative;
+
+        &:after {
+            content: '';
+            padding-bottom: 100%;
+            display: block;
+        }
+
+        & > img {
             object-fit: cover;
             border-radius: 50%;
             height: 100%;
             width: 100%;
+            position: absolute;
         }
     }
+
     figcaption {
         margin-top: 7px;
 
     }
+
     &__item {
-        display:flex;
+        display: flex;
+        justify-content: space-around;
+
         li {
-            padding: 0 30px;
+            padding: 0 17px;
+            flex-basis: 253px;
             //max-width: 253px;
             //max-height: 253px;
         }
     }
+
     a {
         color: #000;
         text-decoration: none;
+    }
+}
+
+// sidebar
+//.sidebar {
+//    position: relative;
+//
+//    &__menu {
+//        display: flex;
+//        flex-direction: column;
+//        position: fixed;
+//        width: 280px;
+//        left: 0;
+//        top: 0;
+//        bottom: 0;
+//        z-index: 10;
+//        transform: translateY(-100%);
+//
+//    }
+//    &.show {
+//       .sidebar__menu {
+//           transform: translateY(0);
+//       }
+//    }
+//}
+.header {
+    position: relative;
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 280px;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        //transform: translateX(-100%);
+        transition: .2s ease-in-out .1s;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+
+        &.show {
+            //transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            left: 0;
+        }
+        &__nav {
+            li {
+                i {
+                    margin-right: 17px;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .sidebar-layout {
+        background-color: #00000082;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        z-index: 5;
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
+.user-info {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__avatar {
+        & > img {
+            border-radius: 50%;
+        }
+    }
+
+    &__account {
+        margin-left: 15px;
+
     }
 }
