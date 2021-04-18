@@ -2,52 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f3c3c6-aeff-4bde-8217-f66cc118284a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/scss/components/_fontawesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/0-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/scss/helpers/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/scss/helpers/_variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/scss/dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/scss/pages/_signup.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/groupbuy.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/include/_admin-header.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/include/_admin-sidebar.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/signup.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/scss/layout/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/scss/layout/_theme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._asian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._bakery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._cantonese.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._chinese.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._deli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._healthy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._pizza.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._store-category.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._taiwanese.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/._top_eats.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/_head.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_head.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_header.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/_js.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_js.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/_layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/_layout.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/all.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -87,10 +61,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public/css/scss" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

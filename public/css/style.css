@@ -6331,12 +6331,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #05944f;
 }
 
-body {
-  font-family: "Microsoft JhengHei", serif;
-}
-
 a {
   color: #05944f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .menu-btn {
@@ -6359,7 +6359,7 @@ a {
 }
 
 .recommend-eat {
-  background-color: #F6F6F6;
+  background-color: #ededed;
   display: block;
   padding: 15px 25px;
   font-size: 16px;
@@ -6468,6 +6468,62 @@ a {
 }
 .user-info__account {
   margin-left: 15px;
+}
+
+.header-admin .navbar-brand {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #000;
+  padding: 60px 40px 50px;
+}
+.footer .copyright {
+  border-top: 1px solid #fff;
+  margin-top: 30px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.footer a {
+  color: #fff;
+}
+.footer .widget li {
+  margin-bottom: 15px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 40px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

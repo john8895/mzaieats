@@ -27,11 +27,16 @@ html
 
     body
         block header
-            header#header.header(class=headerClass)
-                include  _header
+            -if (module !== 'member')
+                header#header.header(class=headerClass)
+                    include  _header
+            -else
+                header.header.header-admin(class=headerClass)
+                    include _admin-header
         block content
         block footer
-            include _footer
+            -if (module !== 'member')
+                include _footer
         block js
             include _js
 

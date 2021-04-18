@@ -10,11 +10,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 body {
-    font-family: "Microsoft JhengHei", serif;
+    //font-family: "Microsoft JhengHei", serif;
 }
 
 a {
     color: $main-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 //section {
@@ -53,7 +58,7 @@ a {
 
 
 .recommend-eat {
-    background-color: #F6F6F6;
+    background-color: #ededed;
     display: block;
     padding: 15px 25px;
     font-size: 16px;
@@ -179,6 +184,7 @@ a {
             visibility: visible;
             left: 0;
         }
+
         &__nav {
             li {
                 i {
@@ -218,5 +224,38 @@ a {
     &__account {
         margin-left: 15px;
 
+    }
+}
+
+.header-admin {
+    .navbar-brand {
+        background-color: #fff;
+    }
+}
+
+.footer {
+    background-color: #000;
+    padding: 60px 40px 50px;
+
+    .copyright {
+        border-top: 1px solid #fff;
+        margin-top: 30px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+        }
+    }
+
+    .widget {
+        li {
+            margin-bottom: 15px;
+        }
     }
 }
