@@ -1,5 +1,5 @@
 #navbarHeader.bg-light.sidebar(style='')
-    .p-3
+    .p-4
         button.btn-login
             |登入
         .user-info
@@ -31,10 +31,13 @@
                 a.nav-link.link-dark(href='#',title='')
                     i.fas.fa-tag
                     | 優惠
-            li
-                a.nav-link.link-dark(href='#',title='')
-                    | 登出
+        a.link-logout(href='javascript:;',title='')
+            | 登出
     hr
+    .d-flex.align-items-center.p-3
+        img(src='images/mzaieats-applogo.svg',width='56',height='56')
+        .app-text.ms-3
+            |App 為您帶來更多美食佳餚。
 .sidebar-layout
 .navbar.navbar-dark.bg-lighj.shadow-sm
     .container-fluid

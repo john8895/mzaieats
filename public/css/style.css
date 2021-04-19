@@ -6332,7 +6332,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 body {
-  font-family: "Microsoft JhengHei";
+  font-family: sans-serif;
 }
 
 section {
@@ -6487,6 +6487,13 @@ body {
   margin-left: 15px;
 }
 
+.link-logout {
+  color: #666;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 .footer {
   background-color: #000;
   padding: 60px 40px 50px;
@@ -6506,16 +6513,16 @@ body {
   margin-bottom: 15px;
 }
 
-.store-list > .container-fluid {
+.store-list > .container-fluid, .groupbuy > .container-fluid {
   padding-bottom: 40px;
 }
-.store-list__item {
+.store-list__item, .groupbuy__item {
   padding-bottom: 24px;
 }
-.store-list .store-meta {
+.store-list .store-meta, .groupbuy .store-meta {
   padding-top: 10px;
 }
-.store-list a {
+.store-list a, .groupbuy a {
   color: #000;
 }
 
