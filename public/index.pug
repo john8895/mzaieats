@@ -4,21 +4,65 @@ block vars
     - var headerClass = 'header-transparent'
 block content
     main.page-index
+        //-
+            section.index-banner
+                h1.banner-title
+        section.groupbuy
+            .container-fluid
+                h2.section-title 最新 Mzai Eats 嗯栽食啥團購
+                    .carousel-control
+                        button.carousel-control-prev(type='button' data-bs-target='#groupbuyCarosel' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        button.carousel-control-next(type='button' data-bs-target='#groupbuyCarosel' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next
+                #groupbuyCarosel.carousel.slide(data-bs-ride='carousel')
+
+                    .carousel-inner
+                        .carousel-item.active
+                            .row
+                                -for(var i=1;i<=3;i++)
+                                    .col-sm-4
+                                        article.store-list__item
+                                            .store-image
+                                                a(href='groupbuy.html',title='')
+                                                    img(src='http://fakeimg.pl/550x275',alt='')
+                                            .store-meta.d-flex
+                                                .store-name
+                                                    a(href='groupbuy.html',title='')
+                                                        | A Bao House 成都店
+                        .carousel-item
+                            .row
+                                -for(var i=1;i<=3;i++)
+                                    .col-sm-4
+                                        article.store-list__item
+                                            .store-image
+                                                a(href='groupbuy.html',title='')
+                                                    img(src='http://fakeimg.pl/550x275',alt='')
+                                            .store-meta.d-flex
+                                                .store-name
+                                                    a(href='groupbuy.html',title='')
+                                                        | A Bao House 都店
+
+
         section.store-list
-            .container-fluid.pt-5
+            .container-fluid
+                h2.section-title 最新 Mzai Eats 嗯栽食啥合作餐廳
                 .row
-                    -for(var i=1;i<=8;i++)
-                        .col-sm-3
+                    -for(var i=1;i<=6;i++)
+                        .col-sm-4
                             article.store-list__item
                                 .store-image
-                                    a(href='groupbuy.html',title='')
+                                    a(href='m-groupbuy.html',title='')
                                         img(src='http://fakeimg.pl/550x275',alt='')
                                 .store-meta.d-flex
                                     .store-name
-                                        a(href='groupbuy.html',title='')
+                                        a(href='m-groupbuy.html',title='')
                                             | A Bao House 成都店
         section.store-category
             .container-fluid
+                h2.section-title 附近的美食
                 ul.store-category__item
                     -for(var i=1;i<=6;i++)
                         li

@@ -6328,7 +6328,15 @@ readers do not read off random characters that represent icons */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2;
   font-weight: 600;
-  color: #05944f;
+  color: #000;
+}
+
+body {
+  font-family: "Microsoft JhengHei";
+}
+
+section {
+  padding: 30px 0;
 }
 
 a {
@@ -6339,88 +6347,46 @@ a:hover {
   text-decoration: underline;
 }
 
-.menu-btn {
-  width: 18px;
-  height: 18px;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  margin-right: 32px;
-  padding: 6px 0 0;
+.header-admin .navbar-brand {
+  background-color: #fff;
 }
 
-.navbar > .container-fluid {
-  padding: 0 40px;
-  justify-content: flex-start;
-}
-.navbar .menu-btn svg {
-  width: 20px;
-  height: 20px;
-}
-
-.recommend-eat {
-  background-color: #ededed;
-  display: block;
-  padding: 15px 25px;
-  font-size: 16px;
-  margin-left: 20px;
-  border-bottom: 1px solid #e3e3e3;
-  min-width: 400px;
-}
-.recommend-eat i {
-  margin-right: 20px;
-  font-size: 18px;
-}
-.recommend-eat .recommend-text {
-  margin-right: 6px;
-}
-
-.store-list > .container-fluid {
-  padding-bottom: 40px;
-}
-.store-list__item {
-  padding-bottom: 24px;
-}
-.store-list .store-meta {
-  padding-top: 10px;
-}
-
-.store-category {
-  padding: 20px 0;
-}
-.store-category figure {
-  position: relative;
-}
-.store-category figure:after {
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-}
-.store-category figure > img {
-  object-fit: cover;
-  border-radius: 50%;
+html {
   height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
   width: 100%;
-  position: absolute;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 40px;
 }
-.store-category figcaption {
-  margin-top: 7px;
+.form-signin .checkbox {
+  font-weight: 400;
 }
-.store-category__item {
-  display: flex;
-  justify-content: space-around;
+.form-signin .form-floating:focus-within {
+  z-index: 2;
 }
-.store-category__item li {
-  padding: 0 17px;
-  flex-basis: 253px;
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
-.store-category a {
-  color: #000;
-  text-decoration: none;
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .header {
   position: relative;
+  padding-bottom: 40px;
 }
 .header .sidebar {
   display: flex;
@@ -6459,6 +6425,57 @@ a:hover {
   display: block;
 }
 
+.btn-login {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 17px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+}
+.btn-login:hover {
+  background-color: #212121;
+}
+
+.menu-btn {
+  width: 18px;
+  height: 18px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-right: 32px;
+  padding: 6px 0 0;
+}
+
+.navbar > .container-fluid {
+  padding: 0 40px;
+  justify-content: flex-start;
+}
+.navbar .menu-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.recommend-eat {
+  background-color: #ededed;
+  display: block;
+  padding: 15px 25px;
+  font-size: 16px;
+  margin-left: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  min-width: 400px;
+}
+.recommend-eat i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+.recommend-eat .recommend-text {
+  margin-right: 6px;
+}
+
 .user-info {
   display: flex;
   margin-bottom: 20px;
@@ -6468,10 +6485,6 @@ a:hover {
 }
 .user-info__account {
   margin-left: 15px;
-}
-
-.header-admin .navbar-brand {
-  background-color: #fff;
 }
 
 .footer {
@@ -6493,37 +6506,66 @@ a:hover {
   margin-bottom: 15px;
 }
 
-html {
-  height: 100%;
+.store-list > .container-fluid {
+  padding-bottom: 40px;
+}
+.store-list__item {
+  padding-bottom: 24px;
+}
+.store-list .store-meta {
+  padding-top: 10px;
+}
+.store-list a {
+  color: #000;
 }
 
-body {
-  height: 100%;
-  background-color: #f5f5f5;
+.store-category {
+  padding: 20px 0;
 }
-
-.form-signin {
+.store-category figure {
+  position: relative;
+}
+.store-category figure:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.store-category figure > img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-  margin-top: 40px;
+  position: absolute;
 }
-.form-signin .checkbox {
-  font-weight: 400;
+.store-category figcaption {
+  margin-top: 7px;
 }
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+.store-category__item {
+  display: flex;
+  justify-content: space-around;
 }
-.form-signin input[type=email] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.store-category__item li {
+  padding: 0 17px;
+  flex-basis: 253px;
 }
-.form-signin input[type=password] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.store-category a {
+  color: #000;
+  text-decoration: none;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 39px;
+  line-height: 44px;
+  font-weight: normal;
+}
+
+.groupbuy .section-title {
+  position: relative;
+}
+.groupbuy .carousel-control {
+  position: absolute;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
