@@ -10,7 +10,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 body {
-    font-family: "Microsoft JhengHei";
+    //font-family: "Microsoft JhengHei", serif;
+}
+
+a {
+    color: $main-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 //section {
@@ -49,7 +58,7 @@ body {
 
 
 .recommend-eat {
-    background-color: #F6F6F6;
+    background-color: #ededed;
     display: block;
     padding: 15px 25px;
     font-size: 16px;
@@ -153,24 +162,41 @@ body {
 //}
 .header {
     position: relative;
+
     .sidebar {
         display: flex;
         flex-direction: column;
         position: fixed;
         width: 280px;
-        left: 0;
+        left: -100%;
         top: 0;
         bottom: 0;
         z-index: 10;
-        transform: translateX(-100%);
-        transition: .3s ease-in-out .1s;
+        //transform: translateX(-100%);
+        transition: .2s ease-in-out .1s;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
 
         &.show {
-            transform: translateY(0)
+            //transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            left: 0;
+        }
+
+        &__nav {
+            li {
+                i {
+                    margin-right: 17px;
+                    color: #000;
+                }
+            }
         }
     }
+
     .sidebar-layout {
-            background-color: #00000082;
+        background-color: #00000082;
         position: fixed;
         top: 0;
         right: 0;
@@ -178,8 +204,58 @@ body {
         bottom: 0;
         display: none;
         z-index: 5;
+
         &.show {
             display: block;
+        }
+    }
+}
+
+.user-info {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__avatar {
+        & > img {
+            border-radius: 50%;
+        }
+    }
+
+    &__account {
+        margin-left: 15px;
+
+    }
+}
+
+.header-admin {
+    .navbar-brand {
+        background-color: #fff;
+    }
+}
+
+.footer {
+    background-color: #000;
+    padding: 60px 40px 50px;
+
+    .copyright {
+        border-top: 1px solid #fff;
+        margin-top: 30px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+        }
+    }
+
+    .widget {
+        li {
+            margin-bottom: 15px;
         }
     }
 }

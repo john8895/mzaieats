@@ -3,7 +3,7 @@ block vars
     - var module='index'
     - var headerClass = 'header-transparent'
 block content
-    main.page__index
+    main.page-index
         section.store-list
             .container-fluid.pt-5
                 .row
@@ -11,16 +11,18 @@ block content
                         .col-sm-3
                             article.store-list__item
                                 .store-image
-                                    img(src='http://fakeimg.pl/550x275',alt='')
+                                    a(href='groupbuy.html',title='')
+                                        img(src='http://fakeimg.pl/550x275',alt='')
                                 .store-meta.d-flex
                                     .store-name
-                                        | A Bao House 成都店
+                                        a(href='groupbuy.html',title='')
+                                            | A Bao House 成都店
         section.store-category
             .container-fluid
                 ul.store-category__item
                     -for(var i=1;i<=6;i++)
                         li
-                            a(href='#',title='')
+                            a(href='category.html',title='')
                                 figure
                                     img(src='images/store-category.jpg',alt='')
                                 figcaption.text-center

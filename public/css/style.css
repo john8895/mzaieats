@@ -173,10 +173,10 @@ ol, ul {
 .pagination > .active > a {
   color: #fff;
   border-color: #ddd;
-  background: #910000;
+  background: #05944f;
 }
 .pagination > .active > a:hover {
-  background-color: #5e0000;
+  background-color: #036335;
 }
 
 ul.pagination-numbers,
@@ -6328,11 +6328,15 @@ readers do not read off random characters that represent icons */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2;
   font-weight: 600;
-  color: #910000;
+  color: #05944f;
 }
 
-body {
-  font-family: "Microsoft JhengHei";
+a {
+  color: #05944f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .menu-btn {
@@ -6355,7 +6359,7 @@ body {
 }
 
 .recommend-eat {
-  background-color: #F6F6F6;
+  background-color: #ededed;
   display: block;
   padding: 15px 25px;
   font-size: 16px;
@@ -6423,15 +6427,23 @@ body {
   flex-direction: column;
   position: fixed;
   width: 280px;
-  left: 0;
+  left: -100%;
   top: 0;
   bottom: 0;
   z-index: 10;
-  transform: translateX(-100%);
-  transition: 0.3s ease-in-out 0.1s;
+  transition: 0.2s ease-in-out 0.1s;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
 }
 .header .sidebar.show {
-  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.header .sidebar__nav li i {
+  margin-right: 17px;
+  color: #000;
 }
 .header .sidebar-layout {
   background-color: #00000082;
@@ -6445,6 +6457,73 @@ body {
 }
 .header .sidebar-layout.show {
   display: block;
+}
+
+.user-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+.user-info__avatar > img {
+  border-radius: 50%;
+}
+.user-info__account {
+  margin-left: 15px;
+}
+
+.header-admin .navbar-brand {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #000;
+  padding: 60px 40px 50px;
+}
+.footer .copyright {
+  border-top: 1px solid #fff;
+  margin-top: 30px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.footer a {
+  color: #fff;
+}
+.footer .widget li {
+  margin-bottom: 15px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 40px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
