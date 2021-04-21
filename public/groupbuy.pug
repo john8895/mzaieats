@@ -18,9 +18,34 @@ block content
                     li
                         i.fa.fa-hand-point-right
                         | 滿 500 外送
-            button.btn.groupbuy-call
+            button.btn.groupbuy-call(type='button' data-bs-toggle='modal' data-bs-target='#groupbuyCallModal')
                 i.fa.fa-user-plus
                 | 發起團購訂單
+
+            #groupbuyCallModal.modal.fade.groupbuy-modal(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                .modal-dialog
+                    .modal-content
+                        .modal-body.groupbuy-body
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .groupbuy-body__content
+                                .text-center
+                                    img(src='images/groupbuy-modal.svg',width='200', height='96')
+                                h1.title
+                                    | 我的團購訂單
+                                p.description 邀請賓客使用可分享連結新增餐點。所有人都訂完後，再幫大家付款。
+                                ul.store-detail
+                                    li
+                                        i.fa.fa-heart
+                                        | 大胖肉羹 中國醫店
+                                    li
+                                        i.fa.fa-phone
+                                        | 電話：04-22490558
+                                    li
+                                        i.fa.fa-coins
+                                        | 滿 500 外送
+
+                                button.btn-login(onclick='location.href="groupbuy-list.html"')
+                                    | 建立訂單
         section.store-info
             .container-fluid
                 ul.d-flex.flex-column

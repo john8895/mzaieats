@@ -87,7 +87,6 @@ a {
     }
 }
 
-//.page-groupbuy {
 .store-info {
     font-size: 14px;
 
@@ -103,4 +102,35 @@ a {
     }
 }
 
-//}
+.groupbuy-modal {
+    .modal-dialog {
+        max-width: 458px;
+    }
+
+    .groupbuy-body {
+        padding: 30px 30px 25px;
+        &__content {
+            .title {
+                font-size: 36px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-weight: normal;
+            }
+            .description {
+                color: #999;
+                margin-bottom: 23px;
+            }
+            .store-detail {
+                margin-top: 17px;
+                margin-bottom: 22px;
+                i {
+                    color: #000;
+                    margin-right: 10px;
+                }
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

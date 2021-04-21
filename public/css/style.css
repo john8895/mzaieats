@@ -22,9 +22,6 @@ ol, ul {
   position: relative;
   z-index: 2;
 }
-.innerpage-banner h1.title {
-  color: #fff;
-}
 .innerpage-banner .overlay {
   z-index: 1;
 }
@@ -6407,6 +6404,34 @@ a:hover {
   line-height: 1.8;
 }
 
+.groupbuy-modal .modal-dialog {
+  max-width: 458px;
+}
+.groupbuy-modal .groupbuy-body {
+  padding: 30px 30px 25px;
+}
+.groupbuy-modal .groupbuy-body__content .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+.groupbuy-modal .groupbuy-body__content .description {
+  color: #999;
+  margin-bottom: 23px;
+}
+.groupbuy-modal .groupbuy-body__content .store-detail {
+  margin-top: 17px;
+  margin-bottom: 22px;
+}
+.groupbuy-modal .groupbuy-body__content .store-detail i {
+  color: #000;
+  margin-right: 10px;
+}
+.groupbuy-modal .groupbuy-body__content .store-detail li {
+  margin-bottom: 10px;
+}
+
 html {
   height: 100%;
 }
@@ -6484,12 +6509,11 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 14px 0;
   font-size: 17px;
   width: 100%;
   outline: none;
   border: none;
-  margin-bottom: 15px;
 }
 .btn-login:hover {
   background-color: #212121;

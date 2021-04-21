@@ -62,7 +62,27 @@
             <li><i class="fa fa-hand-point-right"></i>滿 500 外送</li>
           </ul>
         </div>
-        <button class="btn groupbuy-call"><i class="fa fa-user-plus"></i>發起團購訂單</button>
+        <button class="btn groupbuy-call" type="button" data-bs-toggle="modal" data-bs-target="#groupbuyCallModal"><i class="fa fa-user-plus"></i>發起團購訂單</button>
+        <div class="modal fade groupbuy-modal" id="groupbuyCallModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body groupbuy-body">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="groupbuy-body__content">
+                  <div class="text-center"><img src="images/groupbuy-modal.svg" width="200" height="96"></div>
+                  <h1 class="title">我的團購訂單</h1>
+                  <p class="description">邀請賓客使用可分享連結新增餐點。所有人都訂完後，再幫大家付款。</p>
+                  <ul class="store-detail">
+                    <li><i class="fa fa-heart"></i>大胖肉羹 中國醫店</li>
+                    <li><i class="fa fa-phone"></i>電話：04-22490558</li>
+                    <li><i class="fa fa-coins"></i>滿 500 外送</li>
+                  </ul>
+                  <button class="btn-login" onclick="location.href=&quot;groupbuy-list.html&quot;">建立訂單</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="store-info">
         <div class="container-fluid">
