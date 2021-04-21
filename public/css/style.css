@@ -16,7 +16,7 @@ ol, ul {
 
 .innerpage-banner {
   background-size: cover;
-  background-position: center top;
+  background-position: center 30%;
 }
 .innerpage-banner .vertical-content {
   position: relative;
@@ -6351,6 +6351,62 @@ a:hover {
   background-color: #fff;
 }
 
+.innerpage-banner {
+  position: relative;
+  padding: 130px 30px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.innerpage-banner .innerpage-text {
+  padding: 0 0 0 20px;
+  color: white;
+}
+.innerpage-banner .innerpage-title {
+  color: white;
+  font-size: 33px;
+  font-weight: normal;
+}
+.innerpage-banner .store-meta {
+  display: flex;
+  margin-top: 10px;
+}
+.innerpage-banner i {
+  font-size: small;
+  margin-right: 5px;
+  color: #05944f;
+}
+.innerpage-banner li {
+  margin-right: 10px;
+}
+.innerpage-banner .groupbuy-call {
+  background-color: #fff;
+  border-radius: 40px;
+  font-size: 15px;
+  padding: 7px 15px;
+}
+.innerpage-banner .groupbuy-call i {
+  font-size: 17px;
+  margin-right: 8px;
+  color: #000;
+}
+.innerpage-banner .groupbuy-call:hover {
+  background-color: #ccc;
+}
+
+.store-info {
+  font-size: 14px;
+}
+.store-info i {
+  font-size: 13px;
+  margin-right: 7px;
+  min-width: 15px;
+  text-align: center;
+}
+.store-info li {
+  line-height: 1.8;
+}
+
 html {
   height: 100%;
 }
@@ -6386,7 +6442,6 @@ body {
 
 .header {
   position: relative;
-  padding-bottom: 40px;
 }
 .header .sidebar {
   display: flex;

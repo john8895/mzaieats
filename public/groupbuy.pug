@@ -1,0 +1,36 @@
+extends include/_layout
+block vars
+    - var module='groupbuy'
+    - var headerClass = ''
+block content
+    main.page-groupbuy
+        section.innerpage-banner(style='background-image:url(archive/innerpage-banner.jpg);')
+            .innerpage-text
+                h1.innerpage-title
+                    |大胖肉羹 中國醫店
+                ul.store-meta
+                    li
+                        i.fa.fa-coins
+                        | NTD$45
+                    li
+                        i.fa.fa-hourglass
+                        | 準時
+                    li
+                        i.fa.fa-hand-point-right
+                        | 滿 500 外送
+            button.btn.groupbuy-call
+                i.fa.fa-user-plus
+                | 發起團購訂單
+        section.store-info
+            .container-fluid
+                ul.d-flex.flex-column
+                    li.category
+                        i.fa.fa-folder-open
+                        | 中式美食
+                    li.address
+                        i.fa.fa-map-marker-alt
+                        |台中市北區梅亭街253號, Taichung, 404
+
+        section.groupbuy
+            .container-fluid
+                h2.section-title 最新 Mzai Eats 嗯栽食啥團購
