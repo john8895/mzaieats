@@ -6344,8 +6344,32 @@ a:hover {
   text-decoration: underline;
 }
 
+.container-fluid {
+  padding: 0 40px;
+}
+
 .header-admin .navbar-brand {
   background-color: #fff;
+}
+
+.btn-default {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #05944f;
+}
+
+.icon-md {
+  width: 20px;
+  height: 20px;
 }
 
 .innerpage-banner {
@@ -6367,32 +6391,37 @@ a:hover {
 .innerpage-banner .store-meta {
   display: flex;
   margin-top: 10px;
+  font-size: 14px;
 }
-.innerpage-banner i {
-  font-size: small;
-  margin-right: 5px;
-  color: #05944f;
+.innerpage-banner .store-meta i {
+  font-size: 4px;
+  margin-right: 9px;
+  vertical-align: middle;
+  padding-bottom: 1px;
 }
 .innerpage-banner li {
-  margin-right: 10px;
+  margin-right: 9px;
 }
-.innerpage-banner .groupbuy-call {
+.innerpage-banner .btn-modal-call {
   background-color: #fff;
   border-radius: 40px;
   font-size: 15px;
   padding: 7px 15px;
 }
-.innerpage-banner .groupbuy-call i {
+.innerpage-banner .btn-modal-call i {
   font-size: 17px;
   margin-right: 8px;
   color: #000;
 }
-.innerpage-banner .groupbuy-call:hover {
+.innerpage-banner .btn-modal-call:hover {
   background-color: #ccc;
 }
 
 .store-info {
+  padding: 27px 0 27px;
   font-size: 14px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 20px;
 }
 .store-info i {
   font-size: 13px;
@@ -6401,7 +6430,7 @@ a:hover {
   text-align: center;
 }
 .store-info li {
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .groupbuy-modal .modal-dialog {
@@ -6427,9 +6456,48 @@ a:hover {
 .groupbuy-modal .groupbuy-body__content .store-detail i {
   color: #000;
   margin-right: 10px;
+  width: 16px;
+  text-align: center;
 }
 .groupbuy-modal .groupbuy-body__content .store-detail li {
   margin-bottom: 10px;
+}
+
+.groupbuy-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.groupbuy-meta {
+  display: flex;
+  padding-bottom: 20px;
+  border: 1px solid #E2E2E2;
+}
+.groupbuy-meta .store-text {
+  padding: 15px;
+  flex-basis: 50%;
+}
+.groupbuy-meta .store-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.groupbuy-meta .store-image img {
+  width: 158px;
+  height: 158px;
+  object-fit: fill;
+}
+
+.remark em {
+  font-style: normal;
+  font-size: 12px;
+  color: #676767;
+}
+
+em.red {
+  color: #DC3545;
+  font-style: normal;
+  margin-left: 10px;
 }
 
 html {
@@ -6509,7 +6577,7 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 14px 0;
+  padding: 12px 0;
   font-size: 17px;
   width: 100%;
   outline: none;
@@ -6541,7 +6609,7 @@ body {
 .recommend-eat {
   background-color: #ededed;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 25px 12px;
   font-size: 16px;
   margin-left: 20px;
   border-bottom: 1px solid #e3e3e3;
@@ -6592,16 +6660,16 @@ body {
   margin-bottom: 15px;
 }
 
-.store-list > .container-fluid, .groupbuy > .container-fluid {
+.page-index .store-list > .container-fluid, .page-index .groupbuy > .container-fluid {
   padding-bottom: 40px;
 }
-.store-list__item, .groupbuy__item {
+.page-index .store-list__item, .page-index .groupbuy__item {
   padding-bottom: 24px;
 }
-.store-list .store-meta, .groupbuy .store-meta {
+.page-index .store-list .store-meta, .page-index .groupbuy .store-meta {
   padding-top: 10px;
 }
-.store-list a, .groupbuy a {
+.page-index .store-list a, .page-index .groupbuy a {
   color: #000;
 }
 

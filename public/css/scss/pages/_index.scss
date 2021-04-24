@@ -2,28 +2,28 @@
 @import "../helpers/variable";
 
 .page-index {
+    //store-list
+    .store-list,.groupbuy {
+        & > .container-fluid {
+            padding-bottom: 40px;
+        }
 
+        &__item {
+            padding-bottom: 24px;
+        }
+
+        .store-meta {
+            padding-top: 10px;
+        }
+        .store-name {
+
+        }
+        a {
+            color: #000;
+        }
+    }
 }
-//store-list
-.store-list,.groupbuy {
-    & > .container-fluid {
-        padding-bottom: 40px;
-    }
 
-    &__item {
-        padding-bottom: 24px;
-    }
-
-    .store-meta {
-        padding-top: 10px;
-    }
-    .store-name {
-
-    }
-    a {
-        color: #000;
-    }
-}
 // store-category
 .store-category {
     padding: 20px 0;
