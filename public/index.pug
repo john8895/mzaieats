@@ -25,25 +25,40 @@ block content
                                 -for(var i=1;i<=3;i++)
                                     .col-sm-4
                                         article.store-list__item
-                                            .store-image
-                                                a(href='groupbuy.html',title='')
-                                                    img(src='http://fakeimg.pl/550x275',alt='')
-                                            .store-meta.d-flex
+                                            .store-image(data-groupstart='已')
+                                                a(href='order.html',title='')
+                                                    img(src='archive/p1.jpg',alt='')
+                                            .store-meta
                                                 .store-name
-                                                    a(href='groupbuy.html',title='')
+                                                    a(href='order.html',title='')
                                                         | A Bao House 成都店
+                                                ul.d-flex.store-other-info
+                                                    li.me-2
+                                                        i.fa.fa-clock.me-1
+                                                        | 7 天後收單
+                                                    li
+                                                        i.far.fa-user.me-1
+                                                        | 5 人參加
+
                         .carousel-item
                             .row
                                 -for(var i=1;i<=3;i++)
                                     .col-sm-4
                                         article.store-list__item
                                             .store-image
-                                                a(href='groupbuy.html',title='')
-                                                    img(src='http://fakeimg.pl/550x275',alt='')
-                                            .store-meta.d-flex
+                                                a(href='order.html',title='')
+                                                    img(src='archive/p1.jpg',alt='')
+                                            .store-meta
                                                 .store-name
-                                                    a(href='groupbuy.html',title='')
+                                                    a(href='order.html',title='')
                                                         | A Bao House 都店
+                                                ul.d-flex.store-other-info
+                                                    li.me-2
+                                                        i.fa.fa-clock.me-1
+                                                        | 7 天後收單
+                                                    li
+                                                        i.far.fa-user.me-1
+                                                        | 5 人參加
 
 
         section.store-list
@@ -55,7 +70,7 @@ block content
                             article.store-list__item
                                 .store-image
                                     a(href='m-groupbuy.html',title='')
-                                        img(src='http://fakeimg.pl/550x275',alt='')
+                                        img(src='archive/p1.jpg',alt='')
                                 .store-meta.d-flex
                                     .store-name
                                         a(href='m-groupbuy.html',title='')

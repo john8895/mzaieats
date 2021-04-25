@@ -54,7 +54,7 @@ ol, ul {
   text-decoration: none;
 }
 .jh-breadcrumb li:first-child:before {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -69,7 +69,7 @@ ol, ul {
 .jh-breadcrumb li:not(:last-child):after {
   content: "/";
   font-weight: normal;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   padding-right: 7px;
   padding-left: 7px;
   color: #cccccc;
@@ -6340,10 +6340,6 @@ a {
   color: #05944f;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
-
 .container-fluid {
   padding: 0 40px;
 }
@@ -6488,6 +6484,15 @@ a:hover {
   object-fit: fill;
 }
 
+.store-other-info {
+  font-size: 14px;
+  color: #5f5f5f;
+  margin-top: 2px;
+}
+.store-other-info li:first-child i {
+  color: #05944f;
+}
+
 .remark em {
   font-style: normal;
   font-size: 12px;
@@ -6558,6 +6563,8 @@ body {
 .header .sidebar__nav li i {
   margin-right: 17px;
   color: #000;
+  width: 20px;
+  text-align: center;
 }
 .header .sidebar-layout {
   background-color: #00000082;
@@ -6627,8 +6634,10 @@ body {
   display: flex;
   margin-bottom: 20px;
 }
-.user-info__avatar > img {
+.user-info__avatar img {
   border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 .user-info__account {
   margin-left: 15px;
@@ -6658,6 +6667,9 @@ body {
 }
 .footer .widget li {
   margin-bottom: 15px;
+}
+.footer .container-fluid {
+  padding: 0;
 }
 
 .page-index .store-list > .container-fluid, .page-index .groupbuy > .container-fluid {
@@ -6716,10 +6728,30 @@ body {
 
 .groupbuy .section-title {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .groupbuy .carousel-control {
-  position: absolute;
-  right: 0;
+  width: 50px;
+  height: 20px;
+  position: static;
+  display: flex;
+  justify-content: space-between;
+}
+.groupbuy .carousel-control .carousel-control-prev-icon, .groupbuy .carousel-control .carousel-control-next-icon {
+  background-color: #000;
+  width: 20px;
+  height: 27px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.groupbuy .carousel-control .carousel-control-prev-icon:hover, .groupbuy .carousel-control .carousel-control-next-icon:hover {
+  opacity: 1;
+}
+.groupbuy .carousel-control .carousel-control-next, .groupbuy .carousel-control .carousel-control-prev {
+  position: static;
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */

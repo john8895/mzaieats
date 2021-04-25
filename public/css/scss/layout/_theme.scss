@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        //text-decoration: underline;
     }
 }
 
@@ -201,6 +201,21 @@ a {
             width: 158px;
             height: 158px;
             object-fit: fill;
+        }
+    }
+
+}
+
+.store-other-info {
+    font-size: 14px;
+    color: #5f5f5f;
+    margin-top: 2px;
+
+    li {
+        &:first-child {
+            i {
+                color: $main-color;
+            }
         }
     }
 }

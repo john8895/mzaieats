@@ -39,9 +39,15 @@ block content
                 button.btn.btn-modal-call.me-2(type='button' data-bs-toggle='modal' data-bs-target='#addOrderModal')
                     i.fa.fa-file-signature
                     | 增加/修改訂單
-                button.btn.btn-modal-call(type='button' data-bs-toggle='modal' data-bs-target='#orderCountModal')
+                button.btn.btn-modal-call.me-2(type='button' data-bs-toggle='modal' data-bs-target='#orderCountModal')
                     i.fa.fa-clipboard-check
                     | 訂單統計
+                button.btn.btn-modal-call.me-2(type='button')
+                    i.fa.fa-power-off
+                    | 立即結單
+                button.btn.btn-modal-call(type='button')
+                    i.fa.fa-user-plus
+                    | 恢復開團
 
             #addOrderModal.modal.fade.order-modal(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                 .modal-dialog.modal-xl

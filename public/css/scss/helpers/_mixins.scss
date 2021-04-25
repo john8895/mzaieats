@@ -27,7 +27,7 @@
 // ======================================
 
 //FontAwesome Icon
-@mixin fontAwesome-icon($icon: '', $fontFamily: 'FontAwesome') {
+@mixin fontAwesome-icon($icon: '', $fontFamily: 'Font Awesome 5 Free') {
     font-family: $fontFamily;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;

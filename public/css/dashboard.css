@@ -21,6 +21,7 @@
   padding: 48px 0 0;
   /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
 }
 
 @media (max-width: 767.98px) {
@@ -51,6 +52,9 @@
 }
 .sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
   color: inherit;
+}
+.sidebar .nav-link:hover {
+  color: #007bff;
 }
 
 .sidebar-heading {
@@ -87,6 +91,41 @@
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button {
+  background-color: transparent;
+}
+
+.accordion-button-nosub {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 18px;
+}
+
+.modal-body-content {
+  padding: 20px 20px 30px;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

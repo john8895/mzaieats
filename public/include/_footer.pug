@@ -2,7 +2,15 @@ footer.footer.mt-5
     .container-fluid
         .row
             .col-sm-5
-                img(src='images/logo-light.svg',width='146',height='24',alt='')
+                .d-flex.flex-column.justify-content-between.h-100
+                    a(href='index.html',title='')
+                        figure.d-inline-block
+                            img(src='images/logo-light.svg',width='146',height='24',alt='')
+                            figcaption.mt-2.text-center （嗯災吃啥）
+
+                    .appstore
+                        a(href='https://github.com/john8895/wanna-eat',title='')
+                            image(src='images/appstore.png',alt='' width='132')
             .col-sm-3
                 .widget
                     ul
