@@ -6340,8 +6340,15 @@ a {
   color: #05944f;
   text-decoration: none;
 }
-.container-fluid {
-  padding: 0 40px;
+@media all and (min-width: 320px) {
+  .container-fluid {
+    padding: 0 20px;
+  }
+}
+@media all and (min-width: 768px) {
+  .container-fluid {
+    padding: 0 40px;
+  }
 }
 
 .header-admin .navbar-brand {
@@ -6378,10 +6385,32 @@ a {
 
 .innerpage-banner {
   position: relative;
-  padding: 130px 30px 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 130px 10px 20px 10px;
+}
+@media all and (min-width: 768px) {
+  .innerpage-banner {
+    padding: 130px 30px 20px 0;
+  }
+}
+.innerpage-banner .function-button {
+  margin-top: 20px;
+}
+@media all and (min-width: 768px) {
+  .innerpage-banner .function-button {
+    margin-top: 0;
+  }
+}
+.innerpage-banner .function-button .btn {
+  margin-bottom: 10px;
+}
+@media all and (min-width: 768px) {
+  .innerpage-banner .function-button .btn {
+    margin-bottom: 0;
+  }
 }
 .innerpage-banner .innerpage-text {
   padding: 0 0 0 20px;
@@ -6613,8 +6642,17 @@ body {
 }
 
 .navbar > .container-fluid {
-  padding: 0 40px;
   justify-content: flex-start;
+}
+@media all and (min-width: 320px) {
+  .navbar > .container-fluid {
+    padding: 0 20px;
+  }
+}
+@media all and (min-width: 768px) {
+  .navbar > .container-fluid {
+    padding: 0 40px;
+  }
 }
 .navbar .menu-btn svg {
   width: 20px;
@@ -6624,11 +6662,17 @@ body {
 .recommend-eat {
   background-color: #ededed;
   display: block;
-  padding: 15px 25px 12px;
   font-size: 16px;
-  margin-left: 20px;
   border-bottom: 1px solid #e3e3e3;
-  min-width: 400px;
+  padding: 15px 18px 12px;
+  margin-top: 5px;
+}
+@media all and (min-width: 768px) {
+  .recommend-eat {
+    padding: 15px 25px 12px;
+    margin-left: 20px;
+    min-width: 400px;
+  }
 }
 .recommend-eat i {
   margin-right: 20px;
@@ -6673,15 +6717,35 @@ body {
 .footer a {
   color: #fff;
 }
+@media all and (min-width: 320px) {
+  .footer .widget {
+    margin-bottom: 40px;
+  }
+}
+@media all and (min-width: 768px) {
+  .footer .widget {
+    margin-bottom: 0;
+  }
+}
 .footer .widget li {
   margin-bottom: 15px;
+}
+.footer .appstore {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 768px) {
+  .footer .appstore {
+    margin-bottom: 0;
+  }
 }
 .footer .container-fluid {
   padding: 0;
 }
 
-.page-index .store-list > .container-fluid, .page-index .groupbuy > .container-fluid {
-  padding-bottom: 40px;
+@media all and (min-width: 768px) {
+  .page-index .store-list > .container-fluid, .page-index .groupbuy > .container-fluid {
+    padding-bottom: 40px;
+  }
 }
 .page-index .store-list__item, .page-index .groupbuy__item {
   padding-bottom: 24px;
@@ -6717,10 +6781,21 @@ body {
 .store-category__item {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .store-category__item li {
   padding: 0 17px;
   flex-basis: 253px;
+}
+@media all and (min-width: 320px) {
+  .store-category__item li {
+    margin-bottom: 40px;
+  }
+}
+@media all and (min-width: 768px) {
+  .store-category__item li {
+    margin-bottom: 0;
+  }
 }
 .store-category a {
   color: #000;
@@ -6729,9 +6804,15 @@ body {
 
 .section-title {
   margin-bottom: 20px;
-  font-size: 39px;
-  line-height: 44px;
   font-weight: normal;
+  font-size: 29px;
+  line-height: 1.3;
+}
+@media all and (min-width: 768px) {
+  .section-title {
+    font-size: 39px;
+    line-height: 44px;
+  }
 }
 
 .groupbuy .section-title {
@@ -6749,10 +6830,19 @@ body {
 }
 .groupbuy .carousel-control .carousel-control-prev-icon, .groupbuy .carousel-control .carousel-control-next-icon {
   background-color: #000;
-  width: 20px;
   height: 27px;
   opacity: 0.4;
   cursor: pointer;
+}
+@media all and (min-width: 320px) {
+  .groupbuy .carousel-control .carousel-control-prev-icon, .groupbuy .carousel-control .carousel-control-next-icon {
+    width: 30px;
+  }
+}
+@media all and (min-width: 768px) {
+  .groupbuy .carousel-control .carousel-control-prev-icon, .groupbuy .carousel-control .carousel-control-next-icon {
+    width: 20px;
+  }
 }
 .groupbuy .carousel-control .carousel-control-prev-icon:hover, .groupbuy .carousel-control .carousel-control-next-icon:hover {
   opacity: 1;

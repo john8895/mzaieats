@@ -28,7 +28,12 @@ a {
 }
 
 .container-fluid {
-    padding: 0 40px;
+    @include breakpoint(320) {
+        padding: 0 20px;
+    }
+    @include breakpoint(md) {
+        padding: 0 40px;
+    }
 }
 
 .header-admin {
@@ -50,6 +55,7 @@ a {
     @extend %btn-default;
     background-color: #000;
     color: #fff;
+
     &:hover {
         color: #fff;
         background-color: $main-color;
@@ -69,15 +75,31 @@ a {
 
 .innerpage-banner {
     position: relative;
-    padding: 130px 30px 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 130px 10px 20px 10px;
+
+    @include breakpoint(md) {
+        padding: 130px 30px 20px 0;
+    }
+
+    .function-button {
+        margin-top: 20px;
+        @include breakpoint(md) {
+            margin-top: 0;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+            @include breakpoint(md) {
+                margin-bottom: 0;
+            }
+        }
+    }
 
     .innerpage-text {
-        //position: absolute;
-        //bottom: 14px;
-        //left: 0;
         padding: 0 0 0 20px;
         color: white;
     }

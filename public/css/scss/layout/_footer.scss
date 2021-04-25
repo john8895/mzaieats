@@ -22,11 +22,21 @@
     }
 
     .widget {
+        @include breakpoint(320){
+            margin-bottom: 40px;
+        }
+        @include breakpoint(md){
+            margin-bottom: 0;
+        }
         li {
             margin-bottom: 15px;
         }
     }
     .appstore {
+        margin-bottom: 40px;
+        @include breakpoint(md){
+            margin-bottom: 0;
+        }
         img {
         }
     }

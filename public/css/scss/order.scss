@@ -8,7 +8,7 @@
 }
 
 .order-fixed {
-    height: 80px;
+    //height: 80px;
     background-color: #E6F2ED;
 }
 
@@ -56,8 +56,15 @@
             }
         }
     }
+}
 
-
+.order-add {
+    .form-control {
+        margin-bottom: 10px;
+        @include breakpoint(md) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .delete_order {
@@ -87,5 +94,14 @@
 
     .th:last-child {
         border-top: 2px solid #3c3c3c;
+    }
+}
+
+.btn-check-order {
+    margin-top: 10px;
+    width: 100%;
+    @include breakpoint(md) {
+        margin-top: 0;
+        width: auto;
     }
 }

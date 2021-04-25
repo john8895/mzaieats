@@ -6,8 +6,8 @@ block content
     main.page-order
         section.order-fixed
             .container-fluid
-                .d-flex.justify-content-between
-                    ul.d-flex
+                .d-flex.justify-content-between.flex-wrap
+                    ul.d-flex.flex-wrap
                         li
                             i.fa.fa-user-friends.me-3
                             | 阿翰的團購訂單
@@ -18,9 +18,10 @@ block content
                             | &nbsp;&nbsp;·&nbsp;&nbsp;
                             | 總計：$300
 
-                    button.btn.me-2(type='button' data-bs-toggle='modal' data-bs-target='#addOrderModal')
-                        | 查看訂單
-                        i.fa.fa-long-arrow-alt-right.ms-2
+                    .btn-check-order.text-end
+                        button.btn.me-2(type='button' data-bs-toggle='modal' data-bs-target='#addOrderModal')
+                            | 查看訂單
+                            i.fa.fa-long-arrow-alt-right.ms-2
         section.innerpage-banner(style='background-image:url(archive/innerpage-banner.jpg);')
             .innerpage-text
                 h1.innerpage-title
@@ -229,7 +230,7 @@ block content
                 h3.groupbuy-title 菜單及圖庫 Restaurant menu
                 .row
                     -for(var i = 1; i<=6;i++)
-                        .col-sm-4.mb-4
+                        .col-sm-6.col-md-4.mb-4
                             article.groupbuy-meta
                                 .store-text
                                     | 菜單

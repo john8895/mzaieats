@@ -82,7 +82,12 @@
 
 .navbar {
     & > .container-fluid {
-        padding: 0 40px;
+        @include breakpoint(320) {
+            padding: 0 20px;
+        }
+        @include breakpoint(md) {
+            padding: 0 40px;
+        }
         justify-content: flex-start;
     }
 
@@ -97,11 +102,16 @@
 .recommend-eat {
     background-color: #ededed;
     display: block;
-    padding: 15px 25px 12px;
     font-size: 16px;
-    margin-left: 20px;
     border-bottom: 1px solid #e3e3e3;
-    min-width: 400px;
+    padding: 15px 18px 12px;
+    margin-top: 5px;
+    @include breakpoint(md) {
+
+        padding: 15px 25px 12px;
+        margin-left: 20px;
+        min-width: 400px;
+    }
 
     i {
         margin-right: 20px;
