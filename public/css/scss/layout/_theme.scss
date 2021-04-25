@@ -37,20 +37,29 @@ a {
     }
 }
 
-.btn-default {
-    background-color: #000;
-    color: #fff;
+%btn-default {
     text-align: center;
     padding: 10px 20px;
     font-size: 15px;
     outline: none;
     border: none;
     border-radius: 0;
+}
 
+.btn-default {
+    @extend %btn-default;
+    background-color: #000;
+    color: #fff;
     &:hover {
         color: #fff;
         background-color: $main-color;
     }
+}
+
+.btn-gray {
+    @extend %btn-default;
+    background-color: #999;
+    color: #fff;
 }
 
 .icon-md {

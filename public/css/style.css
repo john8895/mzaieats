@@ -211,7 +211,7 @@ ul.pagination-numbers,
 }
 .pagination-numbers li a:hover, .pagination-numbers li a.active {
   color: #fff;
-  background-image: linear-gradient(141deg, #6c6c6c 41.97%, #323232 41.97%);
+  background-image: linear-gradient(141deg, #14ad63 41.97%, #08a057 41.97%);
 }
 
 /*!
@@ -6348,9 +6348,7 @@ a {
   background-color: #fff;
 }
 
-.btn-default {
-  background-color: #000;
-  color: #fff;
+.btn-gray, .btn-default {
   text-align: center;
   padding: 10px 20px;
   font-size: 15px;
@@ -6358,9 +6356,19 @@ a {
   border: none;
   border-radius: 0;
 }
+
+.btn-default {
+  background-color: #000;
+  color: #fff;
+}
 .btn-default:hover {
   color: #fff;
   background-color: #05944f;
+}
+
+.btn-gray {
+  background-color: #999;
+  color: #fff;
 }
 
 .icon-md {

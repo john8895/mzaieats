@@ -23,7 +23,7 @@
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <!--input.form-control.form-control-dark.w-100(type='text' placeholder='Search' aria-label='Search')-->
         <ul class="navbar-nav px-3 d-flex flex-row">
-          <li class="nav-item text-nowrap me-3"><a class="nav-link" href="index.html" title="">前台首頁</a></li>
+          <li class="nav-item text-nowrap me-4"><a class="nav-link" href="index.html" title="">前台首頁</a></li>
           <li class="nav-item text-nowrap"><a class="nav-link" href="logout.html" title="">登出</a></li>
         </ul>
       </div>
@@ -36,9 +36,9 @@
               <ul class="nav flex-column">
                 <li class="nav-item"><a class="accordion-button-nosub nav-link active" aria-current="page" href="m-index.html" title=""><i class="fa fa-house-user me-3"></i>             管理首頁</a></li>
                 <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-groupbuy.html" title=""><i class="fa fa-users me-3"></i>              團購單</a></li>
-                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-store-list.html" title=""><i class="fa fa-store me-3"></i>              餐廳管理</a></li>
-                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-category.html" title=""><i class="far fa-folder-open me-3"></i>              分類管理</a></li>
-                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-host.html" title=""><i class="fa fa-street-view me-3"></i>              團購負責人</a></li>
+                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-store-list.html" title=""><i class="fa fa-store me-3"></i>              餐廳</a></li>
+                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-category.html" title=""><i class="far fa-folder-open me-3"></i>              分類</a></li>
+                <li class="nav-item"><a class="accordion-button-nosub nav-link" href="m-hosts.html" title=""><i class="fa fa-street-view me-3"></i>              團購主</a></li>
               </ul>
             </div>
           </nav>
@@ -187,6 +187,19 @@
                 <div class="border-top text-end">
                   <button class="btn btn-default mt-4"><i class="fa fa-"></i>刪除所選取的項目</button>
                 </div>
+                <nav class="text-center">
+                  <div class="jh-pagination-wraper">
+                    <div class="pagination">
+                      <form id="searchFormPage" name="searchFormPage" method="GET">
+                        <ul class="pagination-numbers">
+                          <li><a class="active" href="javascript:;" title="">1</a></li>
+                          <li><a href="javascript:;" title="">2</a></li>
+                          <li><a href="javascript:;" title="">3</a></li>
+                        </ul>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
               </div>
             </section>
           </main>

@@ -128,4 +128,14 @@
   padding: 20px 20px 30px;
 }
 
+.btn-delete {
+  vertical-align: sub;
+}
+.btn-delete svg {
+  fill: #DC3545;
+}
+.btn-delete svg:hover {
+  fill: #05944f;
+}
+
 /*# sourceMappingURL=dashboard.css.map */

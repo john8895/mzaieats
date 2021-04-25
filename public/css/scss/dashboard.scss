@@ -1,3 +1,5 @@
+@import "helpers/mixins";
+@import "helpers/variable";
 .feather {
     width: 16px;
     height: 16px;
@@ -142,4 +144,13 @@
 }
 .modal-body-content {
     padding: 20px 20px 30px;
+}
+.btn-delete {
+    vertical-align: sub;
+    svg {
+        fill: #DC3545;
+        &:hover {
+            fill: $main-color;
+        }
+    }
 }
