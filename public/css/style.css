@@ -6345,10 +6345,14 @@ a {
     padding: 0 20px;
   }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1200px) {
   .container-fluid {
     padding: 0 40px;
   }
+}
+
+.page-admin .container-fluid {
+  padding: 0 10px;
 }
 
 .header-admin .navbar-brand {

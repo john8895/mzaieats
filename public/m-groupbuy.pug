@@ -3,7 +3,7 @@ block vars
     - var module='member'
     - var headerClass = ''
 block content
-    main.page-m-groupbuy
+    main.page-m-groupbuy.page-admin
         .container-fluid
             .row
                 include include/_admin-sidebar
@@ -31,7 +31,7 @@ block content
                                             td
                             .row
                                 -for(var i=1;i<=9;i++)
-                                    .col-sm-4.mb-5
+                                    .col-sm-6.col-xl-4.mb-5
                                         article.store-list__item
                                             .store-image
                                                 a(href='order.html',title='', target='_blank')

@@ -178,3 +178,23 @@
         }
     }
 }
+
+.addstore-modal-body {
+    &__content {
+        .addstore-label {
+            @include breakpoint(sm){
+                text-align: right;
+               span {
+                   display: none;
+               }
+            }
+            @include breakpoint(lg){
+                span {
+                    display: inline-block;
+                }
+            }
+            @include breakpoint(md) {
+            }
+        }
+    }
+}

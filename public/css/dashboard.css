@@ -148,4 +148,18 @@
   }
 }
 
+@media all and (min-width: 576px) {
+  .addstore-modal-body__content .addstore-label {
+    text-align: right;
+  }
+  .addstore-modal-body__content .addstore-label span {
+    display: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .addstore-modal-body__content .addstore-label span {
+    display: inline-block;
+  }
+}
+
 /*# sourceMappingURL=dashboard.css.map */

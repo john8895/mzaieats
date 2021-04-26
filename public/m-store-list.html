@@ -30,7 +30,7 @@
         </ul>
       </div>
     </header>
-    <main class="page-m-store-list">
+    <main class="page-m-store-list page-admin">
       <div class="container-fluid">
         <div class="row">
           <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="sidebarMenu">
@@ -60,7 +60,7 @@
             <section class="store-list">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -70,7 +70,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -80,7 +80,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -90,7 +90,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -100,7 +100,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -110,7 +110,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -120,7 +120,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -130,7 +130,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -140,7 +140,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="col-sm-4 mb-5">
+                  <div class="col-sm-6 col-xl-4 mb-5">
                     <article class="store-list__item">
                       <div class="store-image"><a href="m-store-detail.html" title=""><img src="archive/p1.jpg" alt=""></a></div>
                       <div class="store-meta">
@@ -179,7 +179,7 @@
                       <form id="addStoreForm" action="add.php" method="post" enctype="multipart/form-data">
                         <div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-user me-2"></i>餐廳名稱</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-user me-2"></i><span>餐廳名稱</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control border-left-0 border-right-0 border-bottom" type="text" name="name" placeholder="請輸入餐廳名稱 *">
@@ -187,7 +187,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-phone me-2"></i>餐廳電話</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-phone me-2"></i><span>餐廳電話</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control border-left-0 border-right-0 border-bottom" type="text" name="phone" placeholder="請輸入餐廳電話">
@@ -195,7 +195,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-info-circle me-2"></i>餐廳介紹</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-info-circle me-2"></i><span>餐廳介紹</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <textarea class="form-control" name="description" cols="30" rows="3" placeholder="請輸入餐廳介紹"></textarea>
@@ -203,7 +203,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-link me-2"></i>相關網址</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-link me-2"></i><span>相關網址</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control border-left-0 border-right-0 border-bottom" type="number" name="store_full_price" placeholder="">
@@ -211,7 +211,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-coins me-2"></i>外送金額</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-coins me-2"></i><span>外送金額</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control border-left-0 border-right-0 border-bottom" type="number" name="store_full_price" placeholder="滿多少錢才可外送，不限制請輸入 0">
@@ -219,7 +219,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fa fa-tags me-2"></i>分類標籤</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fa fa-tags me-2"></i><span>分類標籤</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control border-left-0 border-right-0 border-bottom" type="text" name="store_tag" placeholder="標籤分類，輸入多個標籤請以逗號「,」分隔">
@@ -227,7 +227,7 @@
                             </div>
                           </div>
                           <div class="row mb-2">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fab fa-intercom me-2"></i>上傳封面</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fab fa-intercom me-2"></i><span>上傳封面</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control-file" id="input_addStoreCover" type="file" name="store_cover"><small class="form-text text-muted">請上傳圖片類型檔案，大小不超過 1 MB</small>
@@ -236,7 +236,7 @@
                             </div>
                           </div>
                           <div class="row">
-                            <label class="col-sm-2 col-form-label text-end"><i class="fab fa-elementor me-2"></i>上傳菜單</label>
+                            <label class="col-sm-2 col-form-label addstore-label"><i class="fab fa-elementor me-2"></i><span>上傳菜單</span></label>
                             <div class="col-sm-10">
                               <div class="form-group">
                                 <input class="form-control-file" id="input_addStoreMenu" type="file" name="images"><small class="form-text text-muted">請上傳圖片類型檔案，大小不超過 1 MB</small>
