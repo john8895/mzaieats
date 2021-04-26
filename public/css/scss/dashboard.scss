@@ -1,5 +1,6 @@
 @import "helpers/mixins";
 @import "helpers/variable";
+
 .feather {
     width: 16px;
     height: 16px;
@@ -14,10 +15,6 @@
     position: fixed;
     top: 0;
     width: 190px;
-
-    /* rtl:raw:
-    right: 0;
-    */
     bottom: 0;
 
     /* rtl:remove */
@@ -29,15 +26,28 @@
 
     /* Height of navbar */
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
-
     overflow-y: auto;
+    transition: .2s ease-in-out;
+    transform: translateX(-100%);
+    @include breakpoint(md) {
+        transform: translateX(0);
+    }
+
+    &.show {
+        transform: translateX(0);
+        transition: .2s ease-in-out;
+    }
+
+    //@include breakpoint(md){
+    //    display: block;
+    //}
 }
 
-@media (max-width: 767.98px) {
-    .sidebar {
-        top: 5rem;
-    }
-}
+//@media (max-width: 767.98px) {
+//    .sidebar {
+//        top: 5rem;
+//    }
+//}
 
 .sidebar-sticky {
     position: relative;
@@ -66,6 +76,7 @@
     &:hover .feather, &.active .feather {
         color: inherit;
     }
+
     &:hover {
         color: #007bff;
     }
@@ -143,15 +154,27 @@
     font-weight: normal;
     margin-bottom: 18px;
 }
+
 .modal-body-content {
     padding: 20px 20px 30px;
 }
+
 .btn-delete {
     vertical-align: sub;
+
     svg {
         fill: #DC3545;
+
         &:hover {
             fill: $main-color;
+        }
+    }
+}
+
+.admin-header {
+    .navbar-toggler {
+        @include breakpoint(md) {
+            display: none;
         }
     }
 }

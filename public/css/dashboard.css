@@ -11,9 +11,6 @@
   position: fixed;
   top: 0;
   width: 190px;
-  /* rtl:raw:
-  right: 0;
-  */
   bottom: 0;
   /* rtl:remove */
   left: 0;
@@ -23,13 +20,19 @@
   /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
   overflow-y: auto;
+  transition: 0.2s ease-in-out;
+  transform: translateX(-100%);
 }
-
-@media (max-width: 767.98px) {
+@media all and (min-width: 768px) {
   .sidebar {
-    top: 5rem;
+    transform: translateX(0);
   }
 }
+.sidebar.show {
+  transform: translateX(0);
+  transition: 0.2s ease-in-out;
+}
+
 .sidebar-sticky {
   position: relative;
   top: 0;
@@ -137,6 +140,12 @@
 }
 .btn-delete svg:hover {
   fill: #05944f;
+}
+
+@media all and (min-width: 768px) {
+  .admin-header .navbar-toggler {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=dashboard.css.map */
