@@ -197,55 +197,57 @@ block content
                                         |共有 2 人參與團購，累積有 2 筆訂單
 
                                     #orderTotal.order-total__content
-                                        .th.row.py-0
-                                            .col-lg-3
+                                        .th.order-total__content__title.row
+                                            .col-sm-3
                                                 span 點餐內容
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 備註
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 數量
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 價格
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 小計
-                                            .col-lg-3
+                                            .col-sm-3
                                                 span 訂購人
-                                        .tr.row.py-0
-                                            .col-lg-3
+                                        .tr.row
+                                            .col-sm-3
                                                 span 肉絲炒飯
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 備註
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 1
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 70
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 70
-                                            .col-lg-3
+                                            .col-sm-3
                                                 ul.d-flex.flex-wrap
-                                                    li.btn.btn-outline-success.py-0.px-1.mr-2.mt-2 愛吃飯
-                                        .tr.row.py-0
-                                            .col-lg-3
+                                                    li.btn.btn-outline-success.px-1.mr-2 愛吃飯
+                                        .tr.row
+                                            .col-sm-3
                                                 span 肉絲炒麵
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 備註
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 1
-                                            .col-lg-1
+                                            .col-sm-1
                                                 span 70
-                                            .col-lg-2
+                                            .col-sm-2
                                                 span 70
-                                            .col-lg-3
+                                            .col-sm-3
                                                 ul.d-flex.flex-wrap
-                                                    li.btn.btn-outline-success.py-0.px-1.mr-2.mt-2 愛吃麵
-                                        .th.row.py-0
-                                            .col-lg-3
-                                            .col-lg-2
-                                            .col-lg-2
-                                                span.justify-content-end 總計
-                                            .col-lg-2
-                                                span 140
-                                            .col-lg-3
+                                                    li.btn.btn-outline-success.px-1.mr-2 愛吃麵
+                                        .th.order-total__content__all-total.row
+                                            .col-sm-3
+                                            .col-sm-2
+                                            .col-sm-2
+                                                span.justify-content-end
+                                                    |總計
+                                                    span.total-number-mobile.ms-1 140
+                                            .col-sm-2
+                                                span.total-number-desktop 140
+                                            .col-sm-3
         section.store-info
             .container-fluid
                 ul.d-flex.flex-column
@@ -266,15 +268,20 @@ block content
         section.groupbuy
             .container-fluid
                 h3.groupbuy-title 菜單及圖庫 Restaurant menu
-                .row
+                .row.gx-0
                     -for(var i = 1; i<=6;i++)
-                        .col-sm-6.col-md-4.mb-4
-                            article.groupbuy-meta
-                                .store-text
-                                    | 菜單
-                                .store-image
-                                    a(href='archive/menu.jpg' data-lightbox='image-1' data-title='菜單')
-                                        img(src='archive/menu.jpg',alt='')
+                        article.groupbuy-meta
+                            .store-image
+                                a(href='archive/menu.jpg' data-lightbox='image-1' data-title='菜單')
+                                    img(src='archive/menu.jpg',alt='')
+                        //-
+                            .col-sm-6.col-md-4.mb-4
+                                article.groupbuy-meta
+                                    .store-text
+                                        | 菜單
+                                    .store-image
+                                        a(href='archive/menu.jpg' data-lightbox='image-1' data-title='菜單')
+                                            img(src='archive/menu.jpg',alt='')
         .remark
             .container-fluid
                 em 上開資訊是由我們所合作之商家合作夥伴所提供。如對上開資訊有任何疑問，請直接與商家合作夥伴聯繫。

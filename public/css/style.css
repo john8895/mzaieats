@@ -6403,7 +6403,7 @@ a {
 .innerpage-banner .function-button {
   margin-top: 20px;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 867px) {
   .innerpage-banner .function-button {
     margin-top: 0;
   }
@@ -6507,17 +6507,14 @@ a {
 }
 
 .groupbuy-meta {
-  display: flex;
-  padding-bottom: 20px;
   border: 1px solid #E2E2E2;
+  width: auto;
+  padding: 1px 0;
+  margin-left: -1px;
 }
 .groupbuy-meta .store-text {
   padding: 15px;
   flex-basis: 50%;
-}
-.groupbuy-meta .store-image {
-  display: flex;
-  justify-content: flex-end;
 }
 .groupbuy-meta .store-image img {
   width: 158px;

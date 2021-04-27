@@ -9,8 +9,8 @@
 }
 
 .order-fixed {
-    //height: 80px;
     background-color: #E6F2ED;
+    padding: 20px 0 10px;
 }
 
 .order-modal {
@@ -61,9 +61,40 @@
 
 .order-total {
     &__content {
-        .th {
+        &__title {
             display: none;
-            @include breakpoint(lg){
+            @include breakpoint(lg) {
+                display: flex;
+            }
+        }
+
+        &__all-total {
+
+        }
+
+        .tr {
+            padding: 8px 5px;
+            border: 1px solid #adadad;
+            margin-bottom: 16px;
+            @include breakpoint(sm) {
+                border: none;
+                margin-bottom: 0;
+                border-top: 1px solid #adadad;
+                padding: 7px 0;
+                align-items: center;
+            }
+        }
+
+        .total-number-mobile {
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+
+        .total-number-desktop {
+            display: none;
+
+            @include breakpoint(md) {
                 display: flex;
             }
         }
@@ -100,9 +131,9 @@
         background-color: #f5f5f5;
     }
 
-    .tr, .th {
-        border-top: 1px solid #eee;
-    }
+    //.tr, .th {
+    //    border-top: 1px solid #eee;
+    //}
 
     .th:last-child {
         border-top: 2px solid #3c3c3c;

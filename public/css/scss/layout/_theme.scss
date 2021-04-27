@@ -93,7 +93,8 @@ a {
 
     .function-button {
         margin-top: 20px;
-        @include breakpoint(md) {
+
+        @media all and (min-width: 867px) {
             margin-top: 0;
         }
 
@@ -218,9 +219,10 @@ a {
 }
 
 .groupbuy-meta {
-    display: flex;
-    padding-bottom: 20px;
     border: 1px solid #E2E2E2;
+    width: auto;
+    padding: 1px 0;
+    margin-left: -1px;
 
     .store-text {
         padding: 15px;
@@ -231,8 +233,8 @@ a {
     }
 
     .store-image {
-        display: flex;
-        justify-content: flex-end;
+        //display: flex;
+        //justify-content: flex-end;
 
         img {
             width: 158px;
