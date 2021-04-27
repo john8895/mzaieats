@@ -33,6 +33,15 @@
   padding-left: 20px;
 }
 
+.order-total__content .th {
+  display: none;
+}
+@media all and (min-width: 992px) {
+  .order-total__content .th {
+    display: flex;
+  }
+}
+
 .order-add .form-control {
   margin-bottom: 10px;
 }

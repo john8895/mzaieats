@@ -59,6 +59,17 @@
     }
 }
 
+.order-total {
+    &__content {
+        .th {
+            display: none;
+            @include breakpoint(lg){
+                display: flex;
+            }
+        }
+    }
+}
+
 .order-add {
     .form-control {
         margin-bottom: 10px;
