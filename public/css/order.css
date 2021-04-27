@@ -36,7 +36,7 @@
 .order-add .form-control {
   margin-bottom: 10px;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1200px) {
   .order-add .form-control {
     margin-bottom: 0;
   }
@@ -72,6 +72,33 @@
   .btn-check-order {
     margin-top: 0;
     width: auto;
+  }
+}
+
+.order-edit .order-item__field {
+  margin-bottom: 10px;
+}
+@media all and (min-width: 1200px) {
+  .order-edit .order-item__field {
+    margin-bottom: 0;
+  }
+}
+.order-edit .order-item__field .form-check-input {
+  margin-left: 0;
+  margin-right: 10px;
+}
+@media all and (min-width: 1200px) {
+  .order-edit .order-item__field .form-check-input {
+    margin-left: -1.5em;
+    margin-right: 0;
+  }
+}
+.order-edit .order-item__field .label-mobile {
+  padding-left: 5px;
+}
+@media all and (min-width: 1200px) {
+  .order-edit .order-item__field .label-mobile {
+    display: none;
   }
 }
 

@@ -102,16 +102,16 @@
                     <form id="order_form" method="post">
                       <input id="order_id" type="hidden" value="210423143111" name="add_order_id">
                       <div class="row">
-                        <div class="col-sm-2">
+                        <div class="col-xl-2">
                           <input class="form-control" type="text" name="add_order_name" placeholder="請輸入姓名 *">
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                           <input class="form-control" type="text" name="add_order_meal" placeholder="請輸入餐點名稱 *">
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-xl-2">
                           <input class="form-control" type="number" name="add_order_price" placeholder="請輸入價格 *">
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-xl-2">
                           <div class="form-group">
                             <select class="form-control" name="add_order_number">
                               <option value="0" disabled="disabled">請選擇數量</option>
@@ -128,7 +128,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                           <input class="form-control" type="text" name="add_order_remark" placeholder="請輸入備註">
                         </div>
                       </div>
@@ -137,60 +137,61 @@
                       </div>
                     </form>
                   </section>
-                  <section class="order-list mt-5">
+                  <section class="order-list mt-5 order-edit">
                     <h3 class="order-modal-title">修改訂單</h3>
                     <p class="description">如要修改訂單，直接修改欄位內容，改完點旁邊一下或按 Enter ，系統即會自動儲存。</p>
                     <div class="order_list" id="order_list">
                       <div class="row py-2 rounded order-item" data-index="1">
-                        <div class="col-sm-1 text-start px-0"><span class="number me-3">1.</span></div>
-                        <div class="col-sm-1 text-start px-0 form-check pt-2">
+                        <div class="order-item__field col-xl-1 text-start px-0"><span class="number me-3">1.</span></div>
+                        <div class="order-item__field col-xl-1 text-start px-0 form-check pt-2">
                           <input class="form-check-input" id="defaultCheck_0" type="checkbox" value="0" name="order_paymentStatus" data-field="付款狀態">
                           <label class="form-check-label" for="defaultCheck_0"><span class="unpaid" data-amount="70 元"><i class="fas fa-dollar-sign"></i>未付款</span></label>
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="field_id" type="hidden" name="field_id" value="60826a029ea90">
+                          <label class="label-mobile" for=""><i class="fa fa-user me-2"></i>姓名</label>
                           <input class="form-control" type="text" value="愛吃飯" name="order_name" placeholder="請輸入姓名 *" data-field="姓名">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="text" value="肉絲炒飯" name="order_meal" placeholder="請輸入餐點名稱 *" data-field="餐點名稱">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="number" value="70" name="order_price" placeholder="請輸入價格 *" data-field="價格">
                         </div>
-                        <div class="col-sm-1 px-1">
+                        <div class="order-item__field col-xl-1 px-1">
                           <input class="form-control" type="number" value="1" name="order_number" placeholder="請輸入數量 *" data-field="數量">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="text" value="不要洋蔥" name="order_remark" placeholder="請輸入備註" data-field="備註">
                         </div>
-                        <div class="col-sm-1 px-1"><a class="btn delete_order" title="刪除此筆訂單">
+                        <div class="order-item__field col-xl-1 px-1"><a class="btn delete_order" title="刪除此筆訂單">
                             <svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                               <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path>
                             </svg></a></div>
                       </div>
                       <div class="row py-2 rounded order-item" data-index="2">
-                        <div class="col-sm-1 text-start px-0"><span class="number me-3">2.</span></div>
-                        <div class="col-sm-1 text-start px-0 form-check pt-2">
+                        <div class="order-item__field col-xl-1 text-start px-0"><span class="number me-3">2.</span></div>
+                        <div class="order-item__field col-xl-1 text-start px-0 form-check pt-2">
                           <input class="form-check-input" id="defaultCheck_1" type="checkbox" value="0" name="order_paymentStatus" data-field="付款狀態">
                           <label class="form-check-label" for="defaultCheck_1"><span class="unpaid" data-amount="70 元"><i class="fas fa-dollar-sign"></i>未付款</span></label>
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="field_id" type="hidden" name="field_id" value="60826a1419a41">
                           <input class="form-control" type="text" value="愛吃麵" name="order_name" placeholder="請輸入姓名 *" data-field="姓名">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="text" value="肉絲炒麵" name="order_meal" placeholder="請輸入餐點名稱 *" data-field="餐點名稱">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="number" value="70" name="order_price" placeholder="請輸入價格 *" data-field="價格">
                         </div>
-                        <div class="col-sm-1 px-1">
+                        <div class="order-item__field col-xl-1 px-1">
                           <input class="form-control" type="number" value="1" name="order_number" placeholder="請輸入數量 *" data-field="數量">
                         </div>
-                        <div class="col-sm-2 px-1">
+                        <div class="order-item__field col-xl-2 px-1">
                           <input class="form-control" type="text" value="不要洋蔥" name="order_remark" placeholder="請輸入備註" data-field="備註">
                         </div>
-                        <div class="col-sm-1 px-1"><a class="btn delete_order" title="刪除此筆訂單">
+                        <div class="order-item__field col-xl-1 px-1"><a class="btn delete_order" title="刪除此筆訂單">
                             <svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                               <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path>
                             </svg></a></div>
