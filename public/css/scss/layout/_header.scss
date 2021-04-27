@@ -126,13 +126,27 @@
 .user-info {
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
 
 
     &__avatar {
-        img {
+        img, i {
             border-radius: 50%;
             width: 48px;
             height: 48px;
+        }
+
+        i {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #c0c0c0;
+            font-size: 25px;
+            color: #000;
         }
     }
 

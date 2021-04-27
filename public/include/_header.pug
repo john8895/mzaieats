@@ -3,13 +3,15 @@
         button.btn-login(onclick='location.href="m-index.html"')
             |登入
         .user-info.mt-4
-            a.user-info__avatar
-                img(src='archive/avatar.png',alt='')
+            a.user-info__avatar(href='https://github.com/john8895/wanna-eat',title='檢視嗯災吃啥專案資訊',target='_blank')
+                i.fab.fa-github
+                //-
+                    img(src='archive/avatar.png',alt='')
             .user-info__account
                 div
-                    | 阿翰
-                a(href='m-info.html',title='')
-                    | 檢視帳戶資訊
+                    | 訂餐小幫手
+                a(href='https://github.com/john8895/wanna-eat',title='檢視嗯災吃啥專案資訊',target='_blank')
+                    | 檢視本專案資訊
         ul.sidebar__nav.nav.nav-pills.flex-column.mb-auto
             li.nav-item
                 a.nav-link.link-dark(href='#',title='')
@@ -18,7 +20,7 @@
             li
                 a.nav-link.link-dark(href='#',title='')
                     i.fas.fa-hands-helping
-                    | 合作餐廳
+                    | 登錄餐廳
             li
                 a.nav-link.link-dark(href='#',title='')
                     i.fas.fa-history

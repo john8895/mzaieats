@@ -213,6 +213,16 @@
         }
     }
 }
-.category-list {
-    padding: 10px 0;
+
+.category-list, .hosts-list {
+    padding: 10px 20px;
+
+    .storeTag-field, .hostname-field {
+        .btn-delete {
+            margin-left: 10px;
+        }
+    }
+}
+.add-host-modal {
+
 }

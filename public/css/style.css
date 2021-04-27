@@ -6689,11 +6689,24 @@ body {
 .user-info {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
-.user-info__avatar img {
+.user-info__avatar img, .user-info__avatar i {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+}
+.user-info__avatar i {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c0c0c0;
+  font-size: 25px;
+  color: #000;
 }
 .user-info__account {
   margin-left: 15px;
@@ -6784,7 +6797,7 @@ body {
 }
 .store-category__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .store-category__item li {
