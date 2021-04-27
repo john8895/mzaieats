@@ -3,7 +3,7 @@ block vars
     - var module='member'
     - var headerClass = ''
 block content
-    main.page-m-store.page-admin
+    main.page-m-category.page-admin
         .container-fluid
             .row
                 include include/_admin-sidebar
@@ -25,7 +25,7 @@ block content
                             button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#addCategoryModal')
                                 i.fa.fa-plus-circle.me-2
                                 | 新增分類
-                    section
+                    section.category-list
                         .row
                             -for(var i=1;i<=9;i++)
                                 .col-sm-3.mt-2

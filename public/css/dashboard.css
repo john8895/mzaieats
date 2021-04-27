@@ -162,4 +162,22 @@
   }
 }
 
+@media all and (min-width: 576px) {
+  .store-edit .addstore-label {
+    text-align: right;
+  }
+  .store-edit .addstore-label span {
+    display: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .store-edit .addstore-label span {
+    display: inline-block;
+  }
+}
+
+.category-list {
+  padding: 10px 0;
+}
+
 /*# sourceMappingURL=dashboard.css.map */

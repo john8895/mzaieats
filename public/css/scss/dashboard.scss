@@ -182,19 +182,37 @@
 .addstore-modal-body {
     &__content {
         .addstore-label {
-            @include breakpoint(sm){
+            @include breakpoint(sm) {
                 text-align: right;
-               span {
-                   display: none;
-               }
+                span {
+                    display: none;
+                }
             }
-            @include breakpoint(lg){
+            @include breakpoint(lg) {
                 span {
                     display: inline-block;
                 }
             }
-            @include breakpoint(md) {
+        }
+    }
+}
+
+.store-edit {
+    .addstore-label {
+        //color: #7c7c7c;
+        @include breakpoint(sm) {
+            text-align: right;
+            span {
+                display: none;
+            }
+        }
+        @include breakpoint(lg) {
+            span {
+                display: inline-block;
             }
         }
     }
+}
+.category-list {
+    padding: 10px 0;
 }

@@ -31,51 +31,58 @@ block content
                             form#addStoreForm(action='add.php' method='post' enctype='multipart/form-data')
                                 div
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-user.me-2
-                                            |餐廳名稱
+                                            span
+                                                |餐廳名稱
                                         .col-sm-10
                                             .form-group
                                                 input.form-control.border-left-0.border-right-0.border-bottom(type='text' name='name' placeholder='請輸入餐廳名稱 *')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-phone.me-2
-                                            |餐廳電話
+                                            span
+                                                |餐廳電話
                                         .col-sm-10
                                             .form-group
                                                 input.form-control.border-left-0.border-right-0.border-bottom(type='text' name='phone' placeholder='請輸入餐廳電話')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-info-circle.me-2
-                                            |餐廳介紹
+                                            span
+                                                |餐廳介紹
                                         .col-sm-10
                                             .form-group
                                                 textarea.form-control(name='description' cols='30' rows='3' placeholder='請輸入餐廳介紹')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-link.me-2
-                                            | 相關網址
+                                            span
+                                                | 相關網址
                                         .col-sm-10
                                             .form-group
                                                 input.form-control.border-left-0.border-right-0.border-bottom(type='number' name='store_full_price' placeholder='')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-coins.me-2
-                                            | 外送金額
+                                            span
+                                                | 外送金額
                                         .col-sm-10
                                             .form-group
                                                 input.form-control.border-left-0.border-right-0.border-bottom(type='number' name='store_full_price' placeholder='滿多少錢才可外送，不限制請輸入 0')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fa.fa-tags.me-2
-                                            | 分類標籤
+                                            span
+                                                | 分類標籤
                                         .col-sm-10
                                             .form-group
                                                 input.form-control.border-left-0.border-right-0.border-bottom(type='text' name='store_tag' placeholder='標籤分類，輸入多個標籤請以逗號「,」分隔')
                                     .row.mb-2
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fab.fa-intercom.me-2
-                                            | 上傳封面
+                                            span
+                                                | 上傳封面
                                         .col-sm-10
                                             .form-group
                                                 input#input_addStoreCover.form-control-file(type='file' name='store_cover')
@@ -83,9 +90,10 @@ block content
                                                     | 請上傳圖片類型檔案，大小不超過 1 MB
                                                 #store_cover_preview
                                     .row
-                                        label.col-sm-2.col-form-label.text-end
+                                        label.col-sm-2.col-form-label.addstore-label
                                             i.fab.fa-elementor.me-2
-                                            | 上傳菜單
+                                            span
+                                                | 上傳菜單
                                         .col-sm-10
                                             .form-group
                                                 input#input_addStoreMenu.form-control-file(type='file' name='images')
