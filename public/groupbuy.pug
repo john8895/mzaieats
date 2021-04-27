@@ -40,7 +40,7 @@ block content
                                             | 團購負責人
                                             em.red *
                                         .row
-                                            .col-sm-6
+                                            .col-sm-6.mb-2
                                                 input.form-control(type='text' value='' placeholder='請輸入團購負責人' name='group_host_new')
                                             .col-sm-6
                                                 select.form-control(name='group_host')
@@ -64,7 +64,7 @@ block content
                                         | 滿 500 外送
                                     li
                                         .row
-                                            .col-sm-6
+                                            .col-sm-6.mb-2
                                                 #datetimepicker_date.input-group.date(data-target-input='nearest')
                                                     input.form-control.datetimepicker-input(type='text' data-target='#datetimepicker_date' name='endTime_day' required='required' placeholder='收單日期 *')
                                                     .input-group-append(data-target='#datetimepicker_date' data-toggle='datetimepicker')
@@ -105,15 +105,12 @@ block content
         section.groupbuy
             .container-fluid
                 h3.groupbuy-title 菜單及圖庫 Restaurant menu
-                .row
+                .row.gx-0
                     -for(var i = 1; i<=6;i++)
-                        .col-sm-4.mb-4
-                            article.groupbuy-meta
-                                .store-text
-                                    | 菜單
-                                .store-image
-                                    a(href='archive/menu.jpg' data-lightbox='image-1' data-title='菜單')
-                                        img(src='archive/menu.jpg',alt='')
+                        article.groupbuy-meta
+                            .store-image
+                                a(href='archive/menu.jpg' data-lightbox='image-1' data-title='菜單')
+                                    img(src='archive/menu.jpg',alt='')
         .remark
             .container-fluid
                 em 上開資訊是由我們所合作之商家合作夥伴所提供。如對上開資訊有任何疑問，請直接與商家合作夥伴聯繫。
