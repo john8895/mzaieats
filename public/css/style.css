@@ -6731,6 +6731,10 @@ body {
   color: #fff;
   font-size: 13px;
 }
+.footer .social-buttons i {
+  font-size: 19px;
+  color: #fff;
+}
 .footer a {
   color: #fff;
 }

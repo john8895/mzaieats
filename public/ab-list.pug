@@ -1,0 +1,11 @@
+extends include/_layout
+block vars
+    - var module='ab-list'
+    - var headerClass = 'header-transparent'
+block content
+    main.page-ab-list
+        section.store-list
+            .container-fluid
+                h2.section-title 關於 Mzai Eats 嗯災吃啥
+                .mt-5
+                include include/_pagination
