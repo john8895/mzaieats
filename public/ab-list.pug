@@ -4,8 +4,33 @@ block vars
     - var headerClass = 'header-transparent'
 block content
     main.page-ab-list
-        section.store-list
+        section.ab-banner(style='background-image:url(http://fakeimg.pl/1920x600)')
+
+        section.ab-list
             .container-fluid
-                h2.section-title 關於 Mzai Eats 嗯災吃啥
-                .mt-5
-                include include/_pagination
+                .row
+                    // -for(var i=1;i<=4;i++)
+                    .col-sm-4.mb-4
+                        article.ab-list__item
+                            img.w-100(src='http://fakeimg.pl/300x300',alt='')
+                            .overlay
+                                .ab-title
+                                    | 為什麼要做這個專案？
+                    .col-sm-4.mb-r
+                        article.ab-list__item
+                            img.w-100(src='http://fakeimg.pl/300x300',alt='')
+                            .overlay
+                                .ab-title
+                                    | 過程中有哪些樂趣？
+                    .col-sm-4.mb-5
+                        article.ab-list__item
+                            img.w-100(src='http://fakeimg.pl/300x300',alt='')
+                            .overlay
+                                .ab-title
+                                    | 之後想增加哪些功能？
+                    .col-sm-4.mb-5
+                        article.ab-list__item
+                            img.w-100(src='http://fakeimg.pl/300x300',alt='')
+                            .overlay
+                                .ab-title
+                                    | 這個專案對你有什麼成長？

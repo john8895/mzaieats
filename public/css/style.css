@@ -6546,6 +6546,30 @@ em.red {
   margin-left: 10px;
 }
 
+.ab-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.ab-list__item {
+  position: relative;
+}
+.ab-list__item .overlay {
+  position: absolute;
+  bottom: 0;
+  height: 22%;
+  background-color: #0000002b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ab-list__item .ab-title {
+  font-size: 18px;
+}
+
 html {
   height: 100%;
 }
